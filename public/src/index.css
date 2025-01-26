@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, button, input{
+    font-family: "Plus Jakarta Sans", serif;
+}
+
+body{
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+
+}
+
+.emoji-picker-react {
+    position: absolute;
+    top: -350px;
+    background-color: #080420;
+    box-shadow: 0 5px 10px #9a86f3;
+    border-color: #9a86f3;
+    .emoji-scroll-wrapper::-webkit-scrollbar {
+      background-color: #080420;
+      width: 5px;
+      &-thumb {
+        background-color: #9a86f3;
+      }
+    }
+    .emoji-categories {
+      button {
+        filter: contrast(0);
+      }
+    }
+    .emoji-search {
+      background-color: transparent;
+      border-color: #9a86f3;
+    }
+    .emoji-group:before {
+      background-color: #080420;
+    }
+  }
